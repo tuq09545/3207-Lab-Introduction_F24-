@@ -1,4 +1,14 @@
-//Given Project code
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+#include "random.h"
+
+void rand_string(char *s, size_t length) {
+    for (size_t i = 0; i < length; i++) { 
+        s[i] = randchar();
+    }
+}
 char* rand_string_alloc(size_t size)
 {
      char *s = malloc(size + 1);
