@@ -17,3 +17,9 @@ char* rand_string_alloc(size_t size)
      }
      return s;
 }
+
+int main() {
+    srand(time(NULL));
+    printf("%s\n", rand_string_alloc(7));
+    return 0;
+}
